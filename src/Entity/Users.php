@@ -80,7 +80,14 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
-
+    public function setTelephone(string $telephone)
+    {
+            $this->telephone = $telephone;
+    }
+    public function getTelephone(): ?string
+    {
+            return $this->telephone;
+    }
     /**
      * A visual identifier that represents this user.
      *
